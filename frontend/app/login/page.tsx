@@ -86,7 +86,7 @@ export default function LoginPage() {
     setError(null)
     setSuccess(false)
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", {
+      const res = await axios.post("https://jpmc-j87f.onrender.com/api/auth/login", {
         username: credentials.email,
         password: credentials.password,
         role: credentials.role,

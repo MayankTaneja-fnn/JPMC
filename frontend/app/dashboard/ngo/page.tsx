@@ -19,7 +19,7 @@ export default function NGODashboard() {
   const [numberOfStudents, setNumberOfStudents] = useState<number | null>();
   
   useEffect(() => {
-      axios.get("http://localhost:5000/api/educator/number_students")
+      axios.get("https://jpmc-j87f.onrender.com/api/educator/number_students")
         .then(res => setNumberOfStudents(res.data.numberOfStudents))
         .catch(() => setNumberOfStudents(null));
     }, []);

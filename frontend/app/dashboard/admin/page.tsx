@@ -19,7 +19,7 @@ export default function AdminDashboard() {
   const [numberOfNgos, setNumberOfNgos] = useState<number | null>();
     
     useEffect(() => {
-        axios.get("https://jpmc-j87f.onrender.com/api/admin/number_ngos")
+        axios.get(https://vruksh-ekatra.onrender.com/api/admin/number_ngos")
           .then(res => setNumberOfNgos(res.data.numberOfngos))
           .catch(() => setNumberOfNgos(null));
       }, []);

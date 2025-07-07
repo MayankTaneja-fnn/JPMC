@@ -39,7 +39,7 @@ export default function AddCoursePage() {
   try {
     const token = typeof window !== "undefined" ? localStorage.getItem("token") : ""
     const res = await axios.post(
-      "https://jpmc-j87f.onrender.com/api/educator/course",
+      "https://vruksh-ekatra.onrender.com/api/educator/course",
       {
         courseName: courseData.courseName,
         module1Text: courseData.module1Text,
